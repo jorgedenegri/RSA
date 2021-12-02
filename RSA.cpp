@@ -68,11 +68,11 @@ vector<int> NAIVE_RSA_KEY_GENERATOR()
     int e = genE(CantInvers);
     int d = Inversa(e, CantInvers);
 
-    vector<int> res;
-    res.push_back(n);
-    res.push_back(e);
-    res.push_back(d);
-    return res;
+    vector<int> vec;
+    vec.push_back(n);
+    vec.push_back(e);
+    vec.push_back(d);
+    return vec;
 }
 int expmod (int a, int b, int p) 
 {
@@ -104,6 +104,6 @@ int main()
         cout << " valor de m: " << expmod(c,vec[2] , vec[0]) <<endl;
       i++;
     }
-    cout<<i;
+    cout<<i-1;
     cout<<" casos";
 }
