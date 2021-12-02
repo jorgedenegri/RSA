@@ -104,6 +104,6 @@ int main()
         cout << " valor de m: " << expmod(c,vec[2] , vec[0]) <<endl;
       i++;
     }
-    cout<<i/2;
+    cout<<i;
     cout<<" casos";
 }
